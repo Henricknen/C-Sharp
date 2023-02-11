@@ -1,0 +1,11 @@
+C:\Users\user\Desktop\git hub\C-Sharp\Programa_no_padrao_Windows_Forms\bin\Debug\Programa_no_padrao_Windows_Forms.exe.config
+C:\Users\user\Desktop\git hub\C-Sharp\Programa_no_padrao_Windows_Forms\bin\Debug\Programa_no_padrao_Windows_Forms.exe
+C:\Users\user\Desktop\git hub\C-Sharp\Programa_no_padrao_Windows_Forms\bin\Debug\Programa_no_padrao_Windows_Forms.pdb
+C:\Users\user\Desktop\git hub\C-Sharp\Programa_no_padrao_Windows_Forms\obj\Debug\Programa_no_padrao_Windows_Forms.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\git hub\C-Sharp\Programa_no_padrao_Windows_Forms\obj\Debug\Programa_no_padrao_Windows_Forms.csproj.SuggestedBindingRedirects.cache
+C:\Users\user\Desktop\git hub\C-Sharp\Programa_no_padrao_Windows_Forms\obj\Debug\Programa_no_padrao_Windows_Forms.Form1.resources
+C:\Users\user\Desktop\git hub\C-Sharp\Programa_no_padrao_Windows_Forms\obj\Debug\Programa_no_padrao_Windows_Forms.Properties.Resources.resources
+C:\Users\user\Desktop\git hub\C-Sharp\Programa_no_padrao_Windows_Forms\obj\Debug\Programa_no_padrao_Windows_Forms.csproj.GenerateResource.cache
+C:\Users\user\Desktop\git hub\C-Sharp\Programa_no_padrao_Windows_Forms\obj\Debug\Programa_no_padrao_Windows_Forms.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\git hub\C-Sharp\Programa_no_padrao_Windows_Forms\obj\Debug\Programa_no_padrao_Windows_Forms.exe
+C:\Users\user\Desktop\git hub\C-Sharp\Programa_no_padrao_Windows_Forms\obj\Debug\Programa_no_padrao_Windows_Forms.pdb
