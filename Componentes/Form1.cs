@@ -17,9 +17,19 @@ namespace Componentes
             InitializeComponent();
         }
 
-        private void btn_botao_Click(object sender, EventArgs e)        // método para o evento de 'click'
+        private void btn_botao_Click(object sender, EventArgs e)        // método para o evento de 'Click'
         {
+            if(tb_veiculo.Text == "")       // se o 'textbox' não estiver prenchido será executado os passos seguintes
+            {
+                MessageBox.Show("Digite um veiculo");       // 'MessageBox.Show' emite uma menssagem
+                tb_veiculo.Focus();     // método 'Focus' define o foco de entrada para o controle
+                return;      // 'return para a execução do programa
+            }
 
+            tb_listaVeiculos.Text += tb_veiculo.Text + ", ";        // adiçionando veiculo na 'tb_listaVeiculos' e '+=' adiçiona 'tb_listaVeiculos' com o valor do veiculo anterior
+
+            tb_veiculo.Clear();     // apos adiçionar o 'tb_veiculo' será limpado
+            tb_veiculo.Focus();         // 'Focus' posicionará o cursor em 'tb_veiculo'
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
@@ -34,6 +44,9 @@ namespace Componentes
 
         private void btn_limpar_Click(object sender, EventArgs e)
         {
+            tb_listaVeiculos.Clear();       // limpa toda lista de veiculos
+            tb_veiculo.Clear();
+            tb_veiculo.Focus();
 
         }
 
