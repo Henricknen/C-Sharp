@@ -1,0 +1,11 @@
+C:\Users\user\Desktop\git hub\C-Sharp\Componentes\bin\Debug\Componentes.exe.config
+C:\Users\user\Desktop\git hub\C-Sharp\Componentes\bin\Debug\Componentes.exe
+C:\Users\user\Desktop\git hub\C-Sharp\Componentes\bin\Debug\Componentes.pdb
+C:\Users\user\Desktop\git hub\C-Sharp\Componentes\obj\Debug\Componentes.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\git hub\C-Sharp\Componentes\obj\Debug\Componentes.csproj.SuggestedBindingRedirects.cache
+C:\Users\user\Desktop\git hub\C-Sharp\Componentes\obj\Debug\Componentes.F_Principal.resources
+C:\Users\user\Desktop\git hub\C-Sharp\Componentes\obj\Debug\Componentes.Properties.Resources.resources
+C:\Users\user\Desktop\git hub\C-Sharp\Componentes\obj\Debug\Componentes.csproj.GenerateResource.cache
+C:\Users\user\Desktop\git hub\C-Sharp\Componentes\obj\Debug\Componentes.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\git hub\C-Sharp\Componentes\obj\Debug\Componentes.exe
+C:\Users\user\Desktop\git hub\C-Sharp\Componentes\obj\Debug\Componentes.pdb
