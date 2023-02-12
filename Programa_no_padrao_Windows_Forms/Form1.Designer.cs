@@ -1,6 +1,6 @@
 ﻿namespace Programa_no_padrao_Windows_Forms
 {
-    partial class Form1
+    partial class Formulario
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -28,51 +28,55 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btn_botao = new System.Windows.Forms.Button();
-            this.lb_label = new System.Windows.Forms.Label();
-            this.tb_nome = new System.Windows.Forms.TextBox();
+            this.btn_texto = new System.Windows.Forms.Button();
+            this.tb_texto = new System.Windows.Forms.TextBox();
+            this.lb_texto = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // btn_botao
+            // btn_texto
             // 
-            this.btn_botao.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.btn_botao.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_botao.ForeColor = System.Drawing.Color.Maroon;
-            this.btn_botao.Location = new System.Drawing.Point(36, 117);
-            this.btn_botao.Name = "btn_botao";
-            this.btn_botao.Size = new System.Drawing.Size(75, 41);
-            this.btn_botao.TabIndex = 0;
-            this.btn_botao.Text = "Botão";
-            this.btn_botao.UseVisualStyleBackColor = false;
-            this.btn_botao.Click += new System.EventHandler(this.button1_Click);
+            this.btn_texto.BackColor = System.Drawing.Color.Cyan;
+            this.btn_texto.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_texto.ForeColor = System.Drawing.Color.Black;
+            this.btn_texto.Location = new System.Drawing.Point(22, 96);
+            this.btn_texto.Name = "btn_texto";
+            this.btn_texto.Size = new System.Drawing.Size(100, 29);
+            this.btn_texto.TabIndex = 0;
+            this.btn_texto.Text = "Botão";
+            this.btn_texto.UseVisualStyleBackColor = false;
+            this.btn_texto.Click += new System.EventHandler(this.button_Click);
             // 
-            // lb_label
+            // tb_texto
             // 
-            this.lb_label.AutoSize = true;
-            this.lb_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_label.Location = new System.Drawing.Point(45, 27);
-            this.lb_label.Name = "lb_label";
-            this.lb_label.Size = new System.Drawing.Size(112, 20);
-            this.lb_label.TabIndex = 1;
-            this.lb_label.Text = "Visual studio";
+            this.tb_texto.Location = new System.Drawing.Point(22, 50);
+            this.tb_texto.Name = "tb_texto";
+            this.tb_texto.Size = new System.Drawing.Size(100, 20);
+            this.tb_texto.TabIndex = 2;
+            this.tb_texto.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // tb_nome
+            // lb_texto
             // 
-            this.tb_nome.Location = new System.Drawing.Point(10, 76);
-            this.tb_nome.Name = "tb_nome";
-            this.tb_nome.Size = new System.Drawing.Size(100, 20);
-            this.tb_nome.TabIndex = 2;
+            this.lb_texto.AutoSize = true;
+            this.lb_texto.BackColor = System.Drawing.Color.White;
+            this.lb_texto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_texto.ForeColor = System.Drawing.Color.CadetBlue;
+            this.lb_texto.Location = new System.Drawing.Point(33, 148);
+            this.lb_texto.Name = "lb_texto";
+            this.lb_texto.Size = new System.Drawing.Size(71, 20);
+            this.lb_texto.TabIndex = 3;
+            this.lb_texto.Text = "....C#....";
+            this.lb_texto.Click += new System.EventHandler(this.label1_Click);
             // 
-            // Form1
+            // Formulario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(276, 450);
-            this.Controls.Add(this.tb_nome);
-            this.Controls.Add(this.lb_label);
-            this.Controls.Add(this.btn_botao);
-            this.Name = "Form1";
-            this.Text = "iniçio_formulario";
+            this.ClientSize = new System.Drawing.Size(155, 284);
+            this.Controls.Add(this.lb_texto);
+            this.Controls.Add(this.tb_texto);
+            this.Controls.Add(this.btn_texto);
+            this.Name = "Formulario";
+            this.Text = "Formulario";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -81,9 +85,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btn_botao;
-        private System.Windows.Forms.Label lb_label;
-        private System.Windows.Forms.TextBox tb_nome;
+        private System.Windows.Forms.Button btn_texto;
+        private System.Windows.Forms.TextBox tb_texto;
+        private System.Windows.Forms.Label lb_texto;
     }
 }
 
