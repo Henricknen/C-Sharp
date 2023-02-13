@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System;       // Formulario 'Pai'
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +12,11 @@ namespace Componentes
 {
     public partial class F_Principal : Form     // 'F_Principal' herda todas propriedades da classe 'Form'
     {
+        public int num;     // criação da variável 'num'
         public F_Principal()
         {
             InitializeComponent();
+            num = 0;        // iniçializando variáve 'num' em 0
         }
 
         private void btn_botao_Click(object sender, EventArgs e)        // método para o evento de 'Click'
@@ -52,8 +54,18 @@ namespace Componentes
 
         private void btn_mostrar_Click(object sender, EventArgs e)      // método 'btn_mostrar_Click'
         {
-            F_Veiculos f_Veiculos = new F_Veiculos(tb_listaVeiculos.Text);      // declarando um objeto do tipo 'f_veiculos' da classe 'F_Veiculos' com o conteudo de 'tb_listaVeiculos' como argumento de entrada
+            F_Veiculos f_Veiculos = new F_Veiculos(tb_listaVeiculos.Text, this);      // declarando um objeto do tipo 'f_veiculos' da classe 'F_Veiculos' com o conteudo de 'tb_listaVeiculos' como argumento de entrada
             f_Veiculos.ShowDialog();        // 'ShowDialog' mostra o formuiario com uma caixa de dialogo 'modal' e 'ShowDialog' não permite ir para o formulario anterior
+        }
+
+        private void F_Principal_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_valNum_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(num.ToString());
         }
     }
 }

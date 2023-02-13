@@ -35,6 +35,7 @@
             this.btn_limpar = new System.Windows.Forms.Button();
             this.Limpar = new System.Windows.Forms.Button();
             this.btn_mostrar = new System.Windows.Forms.Button();
+            this.btn_valNum = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn_botao
@@ -105,11 +106,22 @@
             this.btn_mostrar.UseVisualStyleBackColor = true;
             this.btn_mostrar.Click += new System.EventHandler(this.btn_mostrar_Click);
             // 
+            // btn_valNum
+            // 
+            this.btn_valNum.Location = new System.Drawing.Point(12, 350);
+            this.btn_valNum.Name = "btn_valNum";
+            this.btn_valNum.Size = new System.Drawing.Size(260, 23);
+            this.btn_valNum.TabIndex = 7;
+            this.btn_valNum.Text = "Valor da variavel num";
+            this.btn_valNum.UseVisualStyleBackColor = true;
+            this.btn_valNum.Click += new System.EventHandler(this.btn_valNum_Click);
+            // 
             // F_Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 365);
+            this.ClientSize = new System.Drawing.Size(284, 377);
+            this.Controls.Add(this.btn_valNum);
             this.Controls.Add(this.btn_mostrar);
             this.Controls.Add(this.Limpar);
             this.Controls.Add(this.btn_limpar);
@@ -122,6 +134,7 @@
             this.Name = "F_Principal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Componentes";
+            this.Load += new System.EventHandler(this.F_Principal_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -132,10 +145,11 @@
         private System.Windows.Forms.Button btn_botao;
         private System.Windows.Forms.TextBox tb_veiculo;
         private System.Windows.Forms.Label lb_texto;
-        private System.Windows.Forms.TextBox tb_listaVeiculos;
         private System.Windows.Forms.Button btn_limpar;
         private System.Windows.Forms.Button Limpar;
         private System.Windows.Forms.Button btn_mostrar;
+        private System.Windows.Forms.Button btn_valNum;
+        public System.Windows.Forms.TextBox tb_listaVeiculos;
     }
 }
 

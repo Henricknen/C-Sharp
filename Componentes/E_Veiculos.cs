@@ -12,11 +12,16 @@ namespace Componentes
 {
     public partial class F_Veiculos : Form
     {
-        public F_Veiculos(String v)     // construtor 'F_Veiculos' com um argumento de entrada chamado 'v' do tipo 'string'
+        F_Principal fp;         // do tipo 'F_Principal' será criado objeto 'fp'
+        public F_Veiculos(String v, F_Principal f)     // construtor 'F_Veiculos' com um argumentos de entrada chamado 'v' do tipo 'string' e 'F_Principal f'
         {
             InitializeComponent();
 
             tb_listaVeiculos.Text = v;      // 'tb_listaVeiculos' recebe o valor do argumento de entrada 'v'
+
+            fp = f;
+            f.num = 10;
+
         }
 
         private void F_Veiculos_Load(object sender, EventArgs e)
@@ -27,6 +32,11 @@ namespace Componentes
         private void tb_listaVeiculos_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void F_Veiculos_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            fp.tb_listaVeiculos.Text = tb_listaVeiculos.Text;
         }
     }
 }
