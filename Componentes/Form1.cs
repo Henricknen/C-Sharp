@@ -67,5 +67,17 @@ namespace Componentes
         {
             MessageBox.Show(num.ToString());
         }
+
+        private void checkboxToolStripMenuItem_Click(object sender, EventArgs e)        // método 'checkboxToolStripMenuItem' assoçiado ao evento 'Click'
+        {
+            F_CheckBox f_CheckBox = new F_CheckBox();      // instanciando novo objeto da classe 'F_Checkbox' e abrindo o formulario 'F_Checkbox'
+            f_CheckBox.ShowDialog();        // chamando método 'ShowDialog'
+        }
+
+        private void checkListBoxToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            F_CheckListBox f_CheckListBox = new F_CheckListBox();
+            f_CheckListBox.ShowDialog();
+        }
     }
 }

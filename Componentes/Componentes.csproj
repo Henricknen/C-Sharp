@@ -58,6 +58,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="F_CheckBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_CheckBox.Designer.cs">
+      <DependentUpon>F_CheckBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_CheckListBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_CheckListBox.Designer.cs">
+      <DependentUpon>F_CheckListBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="E_Veiculos.resx">
@@ -65,6 +77,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_CheckBox.resx">
+      <DependentUpon>F_CheckBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_CheckListBox.resx">
+      <DependentUpon>F_CheckListBox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
