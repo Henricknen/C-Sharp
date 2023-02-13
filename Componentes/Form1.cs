@@ -50,6 +50,10 @@ namespace Componentes
 
         }
 
-
+        private void btn_mostrar_Click(object sender, EventArgs e)      // método 'btn_mostrar_Click'
+        {
+            F_Veiculos f_Veiculos = new F_Veiculos(tb_listaVeiculos.Text);      // declarando um objeto do tipo 'f_veiculos' da classe 'F_Veiculos' com o conteudo de 'tb_listaVeiculos' como argumento de entrada
+            f_Veiculos.ShowDialog();        // 'ShowDialog' mostra o formuiario com uma caixa de dialogo 'modal' e 'ShowDialog' não permite ir para o formulario anterior
+        }
     }
 }
