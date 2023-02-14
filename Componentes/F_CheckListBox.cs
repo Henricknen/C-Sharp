@@ -16,5 +16,41 @@ namespace Componentes
         {
             InitializeComponent();
         }
+
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox4_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_transpotesMarcados_Click(object sender, EventArgs e)
+        {
+            string txt = "";        // string 'txt' vazia
+            if (cb_carro.Checked)       // com 'Checked' da para verifincar se componente está maracado ou desmacardo
+            {
+                txt += cb_carro.Text + ", ";
+            }
+
+            if (cb_aviao.Checked)
+            {
+                txt += cb_carro.Text + ", ";
+            }
+
+            if (cb_navio.Checked)
+            {
+                txt += cb_carro.Text + ", ";
+            }
+
+            if (cb_navio.Checked)
+            {
+                txt += cb_carro.Text + ", ";
+            }
+
+            MessageBox.Show(txt);      // mostrando 'caixa de texto'
+        }
     }
 }

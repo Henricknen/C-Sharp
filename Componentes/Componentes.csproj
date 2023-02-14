@@ -84,6 +84,9 @@
     <EmbeddedResource Include="F_CheckListBox.resx">
       <DependentUpon>F_CheckListBox.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="F_CheckListBox.zu.resx">
+      <DependentUpon>F_CheckListBox.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

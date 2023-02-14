@@ -28,21 +28,69 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(F_CheckListBox));
+            this.cb_carro = new System.Windows.Forms.CheckBox();
+            this.cb_aviao = new System.Windows.Forms.CheckBox();
+            this.cb_navio = new System.Windows.Forms.CheckBox();
+            this.cb_onibus = new System.Windows.Forms.CheckBox();
+            this.btn_transpotesMarcados = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // cb_carro
+            // 
+            resources.ApplyResources(this.cb_carro, "cb_carro");
+            this.cb_carro.Name = "cb_carro";
+            this.cb_carro.UseVisualStyleBackColor = true;
+            // 
+            // cb_aviao
+            // 
+            resources.ApplyResources(this.cb_aviao, "cb_aviao");
+            this.cb_aviao.Name = "cb_aviao";
+            this.cb_aviao.UseVisualStyleBackColor = true;
+            this.cb_aviao.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
+            // 
+            // cb_navio
+            // 
+            resources.ApplyResources(this.cb_navio, "cb_navio");
+            this.cb_navio.Name = "cb_navio";
+            this.cb_navio.UseVisualStyleBackColor = true;
+            // 
+            // cb_onibus
+            // 
+            resources.ApplyResources(this.cb_onibus, "cb_onibus");
+            this.cb_onibus.Name = "cb_onibus";
+            this.cb_onibus.UseVisualStyleBackColor = true;
+            this.cb_onibus.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged);
+            // 
+            // btn_transpotesMarcados
+            // 
+            resources.ApplyResources(this.btn_transpotesMarcados, "btn_transpotesMarcados");
+            this.btn_transpotesMarcados.Name = "btn_transpotesMarcados";
+            this.btn_transpotesMarcados.UseVisualStyleBackColor = true;
+            this.btn_transpotesMarcados.Click += new System.EventHandler(this.btn_transpotesMarcados_Click);
             // 
             // F_CheckListBox
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(584, 450);
+            this.Controls.Add(this.btn_transpotesMarcados);
+            this.Controls.Add(this.cb_onibus);
+            this.Controls.Add(this.cb_navio);
+            this.Controls.Add(this.cb_aviao);
+            this.Controls.Add(this.cb_carro);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "F_CheckListBox";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "CheckListBox";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.CheckBox cb_carro;
+        private System.Windows.Forms.CheckBox cb_aviao;
+        private System.Windows.Forms.CheckBox cb_navio;
+        private System.Windows.Forms.CheckBox cb_onibus;
+        private System.Windows.Forms.Button btn_transpotesMarcados;
     }
 }

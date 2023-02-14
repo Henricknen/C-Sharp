@@ -12,3 +12,6 @@ C:\Users\user\Desktop\git hub\C-Sharp\Componentes\obj\Debug\Componentes.pdb
 C:\Users\user\Desktop\git hub\C-Sharp\Componentes\obj\Debug\Componentes.F_Veiculos.resources
 C:\Users\user\Desktop\git hub\C-Sharp\Componentes\obj\Debug\Componentes.F_CheckBox.resources
 C:\Users\user\Desktop\git hub\C-Sharp\Componentes\obj\Debug\Componentes.F_CheckListBox.resources
+C:\Users\user\Desktop\git hub\C-Sharp\Componentes\bin\Debug\zu\Componentes.resources.dll
+C:\Users\user\Desktop\git hub\C-Sharp\Componentes\obj\Debug\Componentes.F_CheckListBox.zu.resources
+C:\Users\user\Desktop\git hub\C-Sharp\Componentes\obj\Debug\zu\Componentes.resources.dll
