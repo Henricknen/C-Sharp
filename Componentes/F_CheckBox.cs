@@ -64,5 +64,11 @@ namespace Componentes
                 MessageBox.Show("Patinete marcado");
             }
         }
+
+        private void F_CheckBox_Load(object sender, EventArgs e)
+        {
+            F_filhoCheckBox f_FilhoCheckBox = new F_filhoCheckBox();
+            f_FilhoCheckBox.ShowDialog();
+        }
     }
 }

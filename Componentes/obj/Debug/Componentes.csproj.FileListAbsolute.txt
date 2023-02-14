@@ -15,3 +15,4 @@ C:\Users\user\Desktop\git hub\C-Sharp\Componentes\obj\Debug\Componentes.F_CheckL
 C:\Users\user\Desktop\git hub\C-Sharp\Componentes\bin\Debug\zu\Componentes.resources.dll
 C:\Users\user\Desktop\git hub\C-Sharp\Componentes\obj\Debug\Componentes.F_CheckListBox.zu.resources
 C:\Users\user\Desktop\git hub\C-Sharp\Componentes\obj\Debug\zu\Componentes.resources.dll
+C:\Users\user\Desktop\git hub\C-Sharp\Componentes\obj\Debug\Componentes.F_filhoCheckBox.resources
