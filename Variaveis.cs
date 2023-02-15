@@ -1,24 +1,26 @@
-using System;
+﻿using System;
 
 class Variaveis {
     static void Main() {
-        byte n1 = 10;       /* variavel de 8 bits pode aramazena valor de 0 e 255 */
-        int num = 0;        /* declarando variavel 'num' e importando o tipo de dados, atribuido um valor (0) a ela */
-        string profissao = "Programador";       /* tipo primitivo de dados adiciona caracter com uso do apostrofo '' */
-        float valor = 9.8f;       /* reservado para pontos flutuantes */
-        string desenvolvedor = "Luis henrique silva ferreira";       /* pode armazena um texto maior, != de 'char' */
-        
-        var aux = 10;       /* o tipo d variavel 'var' e efinido na hora da compilacao pelo valor que a variavel possui */
+    Console.WriteLine("-----Variaveis-----");
+//  tipo    nome
+    string texto;       // variável 'texto'
+    texto = "Ola mundo";     // atribuindo texto 'Ola mundo' a variável 'texto'
+    Console.WriteLine(texto);       // imprimindo valor da variável 'texto' na tela
 
-        Console.WriteLine(profissao);
-        Console.WriteLine(desenvolvedor);      /* comando para ler uma variavel e apresentar seu conteudo na tela */
+    texto = "Codificando em C#";        // alterando o valor da variável 'texto'
+    Console.WriteLine(texto);       // e tem que imprimir novamente
 
-        int num1, num2;        // declarando multiplas variáveis   
+    int n1= 2;      // variaveis 'n1 e n2'
+    int n2= 4;
+    Console.WriteLine(n1 + " é maior que " + n2 + ":" + (n1 > n2));
+    Console.WriteLine(n1 + " é menor que " + n2 + ":" + (n1 < n2));
+    Console.WriteLine(n1 + " é diferente de " + n2 + ":" + (n1 != n2));
+    Console.WriteLine(n1 + " é igual a " + n2 + ":" + (n1 == n2));
 
-        num1 = 12;
-        num2 = 6;
-
-        Console.WriteLine("A multiplicação de " + num1 + " x " + num2 + " é igual a " + num1 * num2);
-
+    Console.WriteLine("-----Constantes-----");
+    Console.WriteLine("Luis_henrique");      // texto 'Luis_henrique' é uma constante lietral que nunca vai mudar
+    Console.WriteLine(10);     // constante numérica
+    // Console.ReadKey();      // 'ReadKey' faz a leitura do teclado que captura a tecla pressionada
     }
 }
