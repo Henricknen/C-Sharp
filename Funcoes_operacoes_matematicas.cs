@@ -23,12 +23,17 @@ class Funcoes_operacoes_matematicas {
 
     static Boolean NumeroPrimo(int numero) { // função que vai calcular se o número é primo ou não
         Boolean primo = false;
-        int count = 0;
+        int count = 0;      // variável 'count' cont quantas vezes numero será dividido
         for(int i = numero; i > 0; i--) {
-            if(numero % i == 0) count++;
+            if(numero % i == 0) count++;        // resto 0 indica que a divisão foi exata 'count' é incrementado
         }
         if(count == 2) primo = true;
         return primo;
+    }
+
+    static void Dividir(int dividendo, int divisor, out int resto, out int quociente) {      // função 'Dividir' por ser do tipo void não devolve nada apenas executa a função, 'out' indica um valor de saída que pode ser modificado e devolvido
+        resto = dividendo % divisor;        // pegando o resto da divisão
+        quociente = dividendo / divisor;
     }
 
     static void Main(string[] args) {
@@ -55,7 +60,7 @@ class Funcoes_operacoes_matematicas {
                 case 2:     // número primo
                     Console.WriteLine("Informe um número: ");
                     n1 = Convert.ToInt32(Console.ReadLine());
-                    if(NumeroPrimo(n1)) {
+                    if(NumeroPrimo(n1)) {       // se numero for igual a 'true'
                         Console.WriteLine("O numero {0} é um numero primo", n1);
                     } else {
                         Console.WriteLine("O numero {0} não é um numero primo", n1);
@@ -68,6 +73,8 @@ class Funcoes_operacoes_matematicas {
 
                     Console.Write("Informe o divisor: "); 
                     n2 = Convert.ToInt32(Console.ReadLine());
+                    Dividir(n1, n2, out resto, out quociente);      // chamando função "Dividir'
+                    Console.WriteLine("{0}/{1} = {2} e sobra {3}", n1, n2, quociente, resto);
                     break;
             }
             Console.ReadLine();
