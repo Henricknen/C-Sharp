@@ -21,6 +21,16 @@ class Funcoes_operacoes_matematicas {
         return numero; 
     }
 
+    static Boolean NumeroPrimo(int numero) { // função que vai calcular se o número é primo ou não
+        Boolean primo = false;
+        int count = 0;
+        for(int i = numero; i > 0; i--) {
+            if(numero % i == 0) count++;
+        }
+        if(count == 2) primo = true;
+        return primo;
+    }
+
     static void Main(string[] args) {
     
         int op = 0;
@@ -45,6 +55,11 @@ class Funcoes_operacoes_matematicas {
                 case 2:     // número primo
                     Console.WriteLine("Informe um número: ");
                     n1 = Convert.ToInt32(Console.ReadLine());
+                    if(NumeroPrimo(n1)) {
+                        Console.WriteLine("O numero {0} é um numero primo", n1);
+                    } else {
+                        Console.WriteLine("O numero {0} não é um numero primo", n1);
+                    }
                     break;
 
                 case 3:     // divisão
